@@ -4,22 +4,42 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Todolist</title>
     <link rel="stylesheet" href="reset.css" />
     <link rel="stylesheet" href="style.css" />
+    
+    
   </head>
   <body>
-    <div class="todo_container">
-      <h1 id="todo_lifeQuote">
-        "내일이 최악의 날이더라도, 나는 오늘을 살겠노라.", 호라티우스
-      </h1>
-      <form class="todo_generator">
-        <input type="text" placeholder="할 일을 입력하세요" />
-      </form>
+    <header>
+      오늘의 todo list 📌
+    </header>
+    <div class="date">
+      <script type="text/javascript">
+        let today = new Date();   
 
-      <h2 id="todo_listTitle">해치워보자!!</h2>
-      <ul class="todo_lists"></ul>
-    </div>
-    <script src="todo.js"></script>
+        let year = today.getFullYear(); 
+        let month = today.getMonth() + 1;  
+        let date = today.getDate();  
+        let day = today.getDay(); 
+
+        document.write('📆 '+month + '월 '  + date+'일 ')
+        document.write(' ')
+        var a=Array("Sunday","Monday", "Tuesday", "Wednesday","Thursday","Friday","Saturday");
+        document.write(a[day]);
+      </script>
+
+    </div>11
+    <form class="todo_generator">
+      <input type="text" id="todo__input" placeholder="📝 할 일을 입력하세요"/>
+    </form>
+    <ul id="todo_lists">
+      
+    </ul>
+    <footer>
+      오늘 하루도 화이팅!
+    </footer>
   </body>
+  <script src="todo.js"></script>
+  
 </html>
