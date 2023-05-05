@@ -1,74 +1,91 @@
 @font-face {
-  font-family: "Pretendard";
-  src: url("https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff")
-    format("woff");
-  font-weight: 400;
+  font-family: 'KOTRA_BOLD-Bold';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-10-21@1.1/KOTRA_BOLD-Bold.woff') format('woff');
+  font-weight: normal;
   font-style: normal;
 }
-
-body,
-html {
-  width: 100%;
+@font-face {
+  font-family: 'GmarketSansMedium';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
 }
-
-body * {
+@font-face {
+  font-family: 'S-CoreDream-3Light';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-3Light.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+*{
   box-sizing: border-box;
-  font-family: "Pretendard";
 }
 
-.todo_container {
-  padding: 30px;
-  width: 1000px;
-  margin: 0 auto;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  text-align: center;
+body{
+  background-color: #fdfaef;
+  
+  
 }
+#container{
+  padding:auto;
+  margin:auto;
+  margin-top: 20px;
+  padding-bottom: 20px;
+  width:500px;
+  background-color: #fdfaef;
+  border-style: solid;
+  border-color: #881717;
+  border-width: 5px;
+  display:flex;
 
-#todo_lifeQuote {
-  font-size: 32px;
-}
-
-.todo_generator {
-  margin-top: 50px;
-}
-
-form {
-  display: flex;
-  justify-content: center;
-}
-
-form input {
-  padding: 15px;
-  border-radius: 15px;
-}
-
-#todo_listTitle {
-  margin-top: 50px;
-  font-size: 26px;
-}
-
-.todo_lists {
-  margin-top: 30px;
-  display: flex;
-  justify-content: center;
-  gap: 20px;
   align-items: center;
   flex-direction: column;
 }
-
-.todo_lists li {
-  border: 1px solid black;
-  width: 500px;
-  padding: 15px;
-  border-radius: 15px;
-  display: flex;
-  align-items: center;
+#title{
+  padding:20px;
 }
-
-ul img {
-  width: 20px;
-  height: 20px;
-  margin-left: 20px;
+h1{
+  color:rgb(136, 23, 23);
+  font-family: 'KOTRA_BOLD-Bold';
+  font-size: 2rem;
+}
+.todo__generator{
+  padding: 10px;
+  align-items: center;
+  
+}
+#todo__input{
+  padding:10px;
+  width:200px;
+  border-radius: 15px;
+  border-style: solid;
+  border-color:#881717 ;
+  
+}
+::placeholder{
+  font-family: 'S-CoreDream-3Light';
+}
+#list{
+  background-color: #881717;
+  border-radius: 30px;
+  padding:10px;
+  margin-top: 10px;
+  font-family: 'GmarketSansMedium';
+  
+  
+}
+li{
+  padding:10px;
+  margin:10px;
+  background-color: rgb(253, 250, 239);
+  border-radius: 10px;
+  width:250px;
+  height:auto;
+  color: rgb(136, 23, 23);
+  font-size: 13px;    
+}
+.todo_delete{
+  width:16px;
+  height: 16px;
+  margin-left: 10px;
+  float: right;
 }
