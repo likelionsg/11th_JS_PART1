@@ -16,6 +16,9 @@ body * {
   font-family: "Pretendard";
 }
 
+body {
+}
+
 .todo_container {
   padding: 30px;
   width: 1000px;
@@ -27,11 +30,18 @@ body * {
 }
 
 #todo_lifeQuote {
-  font-size: 32px;
+  font-size: 50px;
+}
+#todo_lifeQuote span{
+  color: red;
 }
 
 .todo_generator {
-  margin-top: 50px;
+  margin-top: 20px;
+}
+
+.image{
+  margin-top:12px;
 }
 
 form {
@@ -45,9 +55,10 @@ form input {
 }
 
 #todo_listTitle {
-  margin-top: 50px;
+  margin-top: 20px;
   font-size: 26px;
 }
+
 
 .todo_lists {
   margin-top: 30px;
@@ -66,6 +77,7 @@ form input {
   display: flex;
   align-items: center;
 }
+
 
 ul img {
   width: 20px;
