@@ -73,7 +73,8 @@ form input {
   padding: 15px;
   border-radius: 15px;
   color: black;
-
+  transition: width 0.5s;
+  width: 400px;
 }
 
 form input:hover{
@@ -109,7 +110,7 @@ form input:hover{
 }
 
 .todo_lists li:hover{
-  background-color: green;
+  background-color: #7C96AB;
 }
 
 
