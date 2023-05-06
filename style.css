@@ -16,6 +16,10 @@ body * {
   font-family: "Pretendard";
 }
 
+.header {
+  background-color: antiquewhite;
+}
+
 .todo_container {
   padding: 30px;
   width: 1000px;
@@ -44,7 +48,7 @@ form input {
   border-radius: 15px;
 }
 
-#todo_listTitle {
+#todo_title {
   margin-top: 50px;
   font-size: 26px;
 }

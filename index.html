@@ -4,22 +4,26 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>To Do List</title>
     <link rel="stylesheet" href="reset.css" />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div class="todo_container">
-      <h1 id="todo_lifeQuote">
-        "내일이 최악의 날이더라도, 나는 오늘을 살겠노라.", 호라티우스
-      </h1>
+    <div class="header">
+      <div class="todo_container">
+        <h2 id="todo_title">My To Do List</h2>
+        <h3 id="todo_lifeQuote">오늘 할 일을 내일로 미루지 마라</h3>
+      </div>
       <form class="todo_generator">
-        <input type="text" placeholder="할 일을 입력하세요" />
+        <input
+          class="todo_input"
+          type="text"
+          placeholder="할 일을 입력하세요"
+        />
       </form>
-
-      <h2 id="todo_listTitle">해치워보자!!</h2>
-      <ul class="todo_lists"></ul>
     </div>
+
+    <ul class="todo_lists"></ul>
     <script src="todo.js"></script>
   </body>
 </html>
