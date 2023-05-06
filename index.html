@@ -4,22 +4,31 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Things to do</title>
     <link rel="stylesheet" href="reset.css" />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <div class="todo_container">
-      <h1 id="todo_lifeQuote">
-        "내일이 최악의 날이더라도, 나는 오늘을 살겠노라.", 호라티우스
-      </h1>
-      <form class="todo_generator">
-        <input type="text" placeholder="할 일을 입력하세요" />
-      </form>
+      <h1 id="todo_lifeQuote">해야 할 것.</h1>
 
-      <h2 id="todo_listTitle">해치워보자!!</h2>
-      <ul class="todo_lists"></ul>
+      <form class="todo__generator">
+        <input type="text" id="todo__input" placeholder="할 일을 입력하세요." />
+      </form>
+      <ul id="todo__list"></ul>
     </div>
+    <div class="date">
+      <script type="text/javascript">
+        let today = new Date();
+
+        let year = today.getFullYear();
+        let month = today.getMonth() + 1;
+        let date = today.getDate();
+
+        document.write("오늘은 " + month + "월 " + date + "일. ");
+      </script>
+    </div>
+
     <script src="todo.js"></script>
   </body>
 </html>
