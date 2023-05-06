@@ -7,19 +7,16 @@
     <title>Document</title>
     <link rel="stylesheet" href="reset.css" />
     <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Hi+Melody&display=swap" rel="stylesheet">
   </head>
   <body>
-    <div class="todo_container">
-      <h1 id="todo_lifeQuote">
-        "내일이 최악의 날이더라도, 나는 오늘을 살겠노라.", 호라티우스
-      </h1>
-      <form class="todo_generator">
-        <input type="text" placeholder="할 일을 입력하세요" />
+    <div class="container">
+      <div class="title">오늘 해야 할 일 &#x2714;</div>
+      <form class="todo__generator">
+        <input type="text" id="todo__input" placeholder="할 일을 입력하세요" />
       </form>
-
-      <h2 id="todo_listTitle">해치워보자!!</h2>
-      <ul class="todo_lists"></ul>
+      <ul id="todo_lists"></ul>
     </div>
-    <script src="todo.js"></script>
+    <script src="./todo.js"></script>
   </body>
 </html>
