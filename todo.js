@@ -1,7 +1,6 @@
 const todo_generator = document.querySelector(".todo_generator");
 const todo_lists = document.querySelector(".todo_lists");
 
-// 추후 변경해줘야 하므로 let 필수!
 let todos = [];
 
 const deleteTodo = (target) => {

@@ -6,6 +6,14 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: 'PuradakGentleGothicR';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_11-01@1.1/PuradakGentleGothicR.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
 body,
 html {
   width: 100%;
@@ -13,10 +21,11 @@ html {
 
 body * {
   box-sizing: border-box;
-  font-family: "Pretendard";
+  font-family: "PuradakGentleGothicR";
 }
 
 body {
+  background-color: gray;
 }
 
 .todo_container {
@@ -33,16 +42,27 @@ body {
   font-size: 50px;
 }
 #todo_lifeQuote span{
-  color: red;
+  color:yellow;
 }
 
 .todo_generator {
   margin-top: 20px;
 }
 
-.image{
-  margin-top:12px;
+.images{
+  display:flex;
+  justify-content: center;
+  margin-top:20px;
+  height: 200px;
 }
+
+.images img{
+  width: 30%;
+  padding: 10px;
+  border-radius: 30px;
+}
+
+
 
 form {
   display: flex;
@@ -52,11 +72,18 @@ form {
 form input {
   padding: 15px;
   border-radius: 15px;
+  color: black;
+
+}
+
+form input:hover{
+  width:100%;
 }
 
 #todo_listTitle {
   margin-top: 20px;
-  font-size: 26px;
+  font-size: 32px;
+  font-family: PuradakGentleGothicR;
 }
 
 
@@ -69,6 +96,8 @@ form input {
   flex-direction: column;
 }
 
+
+
 .todo_lists li {
   border: 1px solid black;
   width: 500px;
@@ -76,7 +105,13 @@ form input {
   border-radius: 15px;
   display: flex;
   align-items: center;
+  background-color: white;
 }
+
+.todo_lists li:hover{
+  background-color: green;
+}
+
 
 
 ul img {
