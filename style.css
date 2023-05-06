@@ -31,7 +31,8 @@ body * {
 }
 
 #todo_lifeQuote {
-  font-size: 32px;
+  font-size: 26px;
+  margin-top: 20px;
 }
 
 .todo_generator {
@@ -50,7 +51,7 @@ form input {
 
 #todo_title {
   margin-top: 50px;
-  font-size: 26px;
+  font-size: 30px;
 }
 
 .todo_lists {
