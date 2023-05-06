@@ -1,74 +1,151 @@
 @font-face {
-  font-family: "Pretendard";
-  src: url("https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff")
-    format("woff");
-  font-weight: 400;
+  font-family: 'KBO-Dia-Gothic_bold';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2304-2@1.0/KBO-Dia-Gothic_bold.woff') format('woff');
+  font-weight: 700;
   font-style: normal;
 }
 
-body,
+@font-face {
+  font-family: 'KCC-Sonkeechung';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2212@1.0/KCC-Sonkeechung.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+  box-sizing: border-box;
+  max-width: 1920px;
+  margin: 0;
+}
+
 html {
-  width: 100%;
+  font-size: 16px;
 }
 
 body * {
-  box-sizing: border-box;
-  font-family: "Pretendard";
+  font-family: 'KBO-Dia-Gothic_bold';
+  color: white;
 }
 
-.todo_container {
-  padding: 30px;
-  width: 1000px;
+body {
+  background-color: rgb(7, 68, 7);
+}
+
+#todo__title {
+  margin: 4rem;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+#todo__title h1 {
+  font-size: 4rem;
+  font-weight: bolder;
+}
+
+#todo__title h2 {
+  margin-top: 1rem;
+
+  font-family: 'KCC-Sonkeechung';
+  font-size: 1rem;
+}
+
+#todo__generator {
+  width: 100%;
+  margin-top: 4rem;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#todo__input {
+  width: 32%;
+  height: 3rem;
+  border: 0.3rem solid black;
+  padding: 0.75rem;
+
+  background-color: white;
+  font-size: 1rem;
+}
+
+#todo__list {
+  width: 60%;
   margin: 0 auto;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-content: center;
+}
+
+#todo__list li {
+  width: 45%;
+  height: 5rem;
+  margin: 1rem;
+  border: 0.3rem solid black;
+  border-radius: 20px;
+  padding: 1.5rem;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  background-color: white;
+  font-size: 1.5rem;
+}
+
+li span {
+  color: rgb(7, 68, 7);
+}
+
+li .todo__update {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+li .todo__delete {
+  width: 1.5rem;
+  height: 1.5rem;
+  margin-left: 1rem;
+}
+
+#footer {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  text-align: center;
-}
-
-#todo_lifeQuote {
-  font-size: 32px;
-}
-
-.todo_generator {
-  margin-top: 50px;
-}
-
-form {
-  display: flex;
-  justify-content: center;
-}
-
-form input {
-  padding: 15px;
-  border-radius: 15px;
-}
-
-#todo_listTitle {
-  margin-top: 50px;
-  font-size: 26px;
-}
-
-.todo_lists {
-  margin-top: 30px;
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-  align-items: center;
-  flex-direction: column;
-}
-
-.todo_lists li {
-  border: 1px solid black;
-  width: 500px;
-  padding: 15px;
-  border-radius: 15px;
-  display: flex;
   align-items: center;
 }
 
-ul img {
-  width: 20px;
-  height: 20px;
-  margin-left: 20px;
+#foot__logo {
+  width: 15%;
+  margin-top: 5rem;
+}
+
+#footer h3 {
+  margin: 1rem;
+
+  font-size: 0.75rem;
+  color: white;
+}
+
+@media (max-width:1280px) {
+  html {
+    font-size: 12px;
+  }
+}
+
+@media (max-width:820px) {
+  #todo__list {
+    width: 80%;
+    flex-direction: column;
+  }
+}
+
+@media (max-width:500px) {
+  html {
+    font-size: 7px;
+  }
 }

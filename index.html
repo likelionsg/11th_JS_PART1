@@ -1,25 +1,34 @@
 <!DOCTYPE html>
 <html lang="ko">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="reset.css" />
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <div class="todo_container">
-      <h1 id="todo_lifeQuote">
-        "내일이 최악의 날이더라도, 나는 오늘을 살겠노라.", 호라티우스
-      </h1>
-      <form class="todo_generator">
-        <input type="text" placeholder="할 일을 입력하세요" />
-      </form>
 
-      <h2 id="todo_listTitle">해치워보자!!</h2>
-      <ul class="todo_lists"></ul>
-    </div>
-    <script src="todo.js"></script>
-  </body>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TO-DO LIST</title>
+  <link rel="icon" href="./image/likelion_sogang_logo.svg">
+  <link rel="stylesheet" href="reset.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <div id="todo__title">
+    <h1>TO-DO LIST</h1>
+    <h2>Set a goal for even the smallest thing. Then you will surely succeed.</h2>
+    <form id="todo__generator">
+      <input type="text" style="color:rgb(7, 68, 7)" placeholder="What to do?" id="todo__input" />
+    </form>
+  </div>
+
+  <ul id="todo__list"></ul>
+
+  <footer id="footer">
+    <img id="foot__logo" src="./image/likelion_white_logo.svg" />
+    <h3>Copyright 2023. 김기철 all right reserved.</h3>
+  </footer>
+
+
+  <script src="todo.js"></script>
+</body>
+
 </html>
