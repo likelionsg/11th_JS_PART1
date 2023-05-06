@@ -9,16 +9,12 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div class="todo_container">
-      <h1 id="todo_lifeQuote">
-        "내일이 최악의 날이더라도, 나는 오늘을 살겠노라.", 호라티우스
-      </h1>
-      <form class="todo_generator">
-        <input type="text" placeholder="할 일을 입력하세요" />
+    <div class="all_container">
+      <div id="title"><h2>투 두 리스트</h2></div>
+      <form class="todo__generator">
+        <input type="text" id="todo__input" placeholder="해야 할 일!" />
       </form>
-
-      <h2 id="todo_listTitle">해치워보자!!</h2>
-      <ul class="todo_lists"></ul>
+      <ul id="todo__list"></ul>
     </div>
     <script src="todo.js"></script>
   </body>
