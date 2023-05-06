@@ -1,74 +1,102 @@
-@font-face {
-  font-family: "Pretendard";
-  src: url("https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff")
-    format("woff");
-  font-weight: 400;
-  font-style: normal;
+html {
+  font-size: 16px;
 }
 
-body,
-html {
+body {
+  max-width:1300px;
+  margin: 0 auto;
+  font-family: 'Sofia Sans Extra Condensed', sans-serif;
+}
+
+#container {
+  display: flex;
+  min-height: 100vh;
+  justify-content: space-between;
+  width:100%;
+  /* border-radius: 100px; */
+  background-color: white;
+}
+
+#inputside {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  
+  padding: 50px;
+  border-right: 1px solid #ddd;
+}
+#inputside #logo {
+  display: flex;
+  align-items:baseline
+}
+#logo h1 {
+  font-size: 5rem;
+  text-decoration: underline;
+}
+#logo span {
+  margin-left: 1rem;
+  font-size: 4rem;
+  color: green;
+}
+#inputside input {
+  margin-top: 50px;
+  width: 300px;
+  height: 50px;
+  border-radius: 5px;
+  text-indent: 10px;;
+}
+
+#listside {
+  display: flex;
+  align-items: center;
   width: 100%;
 }
-
-body * {
-  box-sizing: border-box;
-  font-family: "Pretendard";
-}
-
-.todo_container {
-  padding: 30px;
-  width: 1000px;
+ul {
+  width: 90%;
   margin: 0 auto;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+li {
+  width: 25%;
+  margin: 3%;
+  border: 2px solid #ddd;
+  padding: 10px;
+  border-radius: 10px;
+}
+li span::before {
+  content: '📌';
+  display: block;
+  margin-top: -25px;
+  margin-bottom: 25px;
+}
+li span {
+  display: block;
+  margin-bottom: 25px;
   text-align: center;
+  font-size: 1.5rem;
+}
+li input {
+  width: 90%;
+  height: 30px;
+  margin-bottom: 25px;
+  border-radius: 5px;
+  text-indent: 10px;;
 }
 
-#todo_lifeQuote {
-  font-size: 32px;
-}
-
-.todo_generator {
-  margin-top: 50px;
-}
-
-form {
-  display: flex;
-  justify-content: center;
-}
-
-form input {
-  padding: 15px;
-  border-radius: 15px;
-}
-
-#todo_listTitle {
-  margin-top: 50px;
-  font-size: 26px;
-}
-
-.todo_lists {
-  margin-top: 30px;
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-  align-items: center;
-  flex-direction: column;
-}
-
-.todo_lists li {
-  border: 1px solid black;
-  width: 500px;
-  padding: 15px;
-  border-radius: 15px;
-  display: flex;
-  align-items: center;
-}
-
-ul img {
+.deleteImg,.setImg{
   width: 20px;
   height: 20px;
-  margin-left: 20px;
+  margin-left: 10px;
+}
+
+#popup {
+  position: fixed;
+  font-size: 2rem;
+  background-color: green;
+  color: white;
+  padding: 10px 50px;
+  border-radius: 999px;
+  transform: translate(110%, 500%);
 }
