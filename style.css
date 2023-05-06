@@ -1,47 +1,90 @@
 @font-face {
-  font-family: "Pretendard";
-  src: url("https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff")
-    format("woff");
-  font-weight: 400;
+  font-family: "BookkMyungjo-Bd";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2302@1.0/BookkMyungjo-Bd.woff2")
+    format("woff2");
+  font-weight: 700;
   font-style: normal;
 }
 
 body,
 html {
+  background-color: #fae3de;
   width: 100%;
 }
 
 body * {
   box-sizing: border-box;
-  font-family: "Pretendard";
+  font-family: "BookkMyungjo-Bd";
+}
+
+* {
+  font-family: inherit;
 }
 
 .todo_container {
   padding: 30px;
-  width: 1000px;
+  width: 600px;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  text-align: center;
+  justify-content: left;
+  text-align: left;
 }
 
 #todo_lifeQuote {
   font-size: 32px;
 }
 
-.todo_generator {
-  margin-top: 50px;
+.todo__delete {
+  width: 15px;
+  height: 15px;
+  margin-left: 10px;
+  align-items: right;
 }
 
 form {
   display: flex;
-  justify-content: center;
+  margin-top: 20px;
+  justify-content: left;
 }
 
-form input {
+ul {
+  margin-top: 30px;
+  margin-left: 10px;
+  display: flex;
+  justify-content: left;
+  gap: 20px;
+  align-items: left;
+  flex-direction: column;
+}
+
+#todo__input {
+  margin-top: 10px;
+  background-color: #fae3de;
+  border: 1px solid rgb(0, 0, 0);
+  color: rgb(0, 0, 0);
+  font-size: 15px;
+  width: 500px;
   padding: 15px;
+  display: flex;
+  align-items: center;
+}
+
+#todo__list {
+  margin-top: 30px;
+  gap: 0px;
+}
+
+#todo__list li {
+  width: 500px;
+  padding: 20px;
+  margin: 10px 0;
   border-radius: 15px;
+  display: flex;
+}
+
+#todo__list span {
+  margin: 0 auto;
 }
 
 #todo_listTitle {
@@ -49,26 +92,12 @@ form input {
   font-size: 26px;
 }
 
-.todo_lists {
-  margin-top: 30px;
+.date {
+  padding: 30px;
+  width: 600px;
+  margin: 0 auto;
   display: flex;
-  justify-content: center;
-  gap: 20px;
-  align-items: center;
   flex-direction: column;
-}
-
-.todo_lists li {
-  border: 1px solid black;
-  width: 500px;
-  padding: 15px;
-  border-radius: 15px;
-  display: flex;
-  align-items: center;
-}
-
-ul img {
-  width: 20px;
-  height: 20px;
-  margin-left: 20px;
+  justify-content: right;
+  text-align: left;
 }
