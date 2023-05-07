@@ -40,9 +40,12 @@ body {
 
 #todo_lifeQuote {
   font-size: 50px;
+  font-family: "Pretendard";
+    
 }
 #todo_lifeQuote span{
   color:yellow;
+  font-family: "Pretendard";
 }
 
 .todo_generator {
@@ -57,7 +60,8 @@ body {
 }
 
 .images img{
-  width: 30%;
+  width: 400px;
+  height: 200px;
   padding: 10px;
   border-radius: 30px;
 }
@@ -71,6 +75,7 @@ form {
 
 form input {
   padding: 15px;
+  margin-top: 20px;
   border-radius: 15px;
   color: black;
   transition: width 0.5s;
@@ -83,7 +88,7 @@ form input:hover{
 
 #todo_listTitle {
   margin-top: 20px;
-  font-size: 32px;
+  font-size: 60px;
   font-family: PuradakGentleGothicR;
 }
 
@@ -97,7 +102,13 @@ form input:hover{
   flex-direction: column;
 }
 
-
+ul{
+  background-image: url("./image/26536119-검은-색과-흰색-원활한-패턴-추상-문양의-장식.webp");
+  padding: 20px;
+  margin: 20px;
+  border-radius: 20px;
+  width: 100%
+}
 
 .todo_lists li {
   border: 1px solid black;
