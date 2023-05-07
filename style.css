@@ -6,6 +6,14 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: 'PuradakGentleGothicR';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_11-01@1.1/PuradakGentleGothicR.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
 body,
 html {
   width: 100%;
@@ -13,7 +21,11 @@ html {
 
 body * {
   box-sizing: border-box;
-  font-family: "Pretendard";
+  font-family: "PuradakGentleGothicR";
+}
+
+body {
+  background-color: gray;
 }
 
 .todo_container {
@@ -27,12 +39,34 @@ body * {
 }
 
 #todo_lifeQuote {
-  font-size: 32px;
+  font-size: 50px;
+  font-family: "Pretendard";
+    
+}
+#todo_lifeQuote span{
+  color:yellow;
+  font-family: "Pretendard";
 }
 
 .todo_generator {
-  margin-top: 50px;
+  margin-top: 20px;
 }
+
+.images{
+  display:flex;
+  justify-content: center;
+  margin-top:20px;
+  height: 200px;
+}
+
+.images img{
+  width: 400px;
+  height: 200px;
+  padding: 10px;
+  border-radius: 30px;
+}
+
+
 
 form {
   display: flex;
@@ -41,13 +75,23 @@ form {
 
 form input {
   padding: 15px;
+  margin-top: 20px;
   border-radius: 15px;
+  color: black;
+  transition: width 0.5s;
+  width: 400px;
+}
+
+form input:hover{
+  width:100%;
 }
 
 #todo_listTitle {
-  margin-top: 50px;
-  font-size: 26px;
+  margin-top: 20px;
+  font-size: 60px;
+  font-family: PuradakGentleGothicR;
 }
+
 
 .todo_lists {
   margin-top: 30px;
@@ -58,6 +102,14 @@ form input {
   flex-direction: column;
 }
 
+ul{
+  background-image: url("./image/26536119-검은-색과-흰색-원활한-패턴-추상-문양의-장식.webp");
+  padding: 20px;
+  margin: 20px;
+  border-radius: 20px;
+  width: 100%
+}
+
 .todo_lists li {
   border: 1px solid black;
   width: 500px;
@@ -65,7 +117,14 @@ form input {
   border-radius: 15px;
   display: flex;
   align-items: center;
+  background-color: white;
 }
+
+.todo_lists li:hover{
+  background-color: #7C96AB;
+}
+
+
 
 ul img {
   width: 20px;
