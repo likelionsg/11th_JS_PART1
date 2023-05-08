@@ -1,74 +1,68 @@
 @font-face {
-  font-family: "Pretendard";
-  src: url("https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff")
-    format("woff");
+  font-family: 'HANAMDAUM';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2304-2@1.0/HANAMDAUM.woff2') format('woff2');
   font-weight: 400;
   font-style: normal;
 }
 
-body,
-html {
-  width: 100%;
-}
-
-body * {
+* {
   box-sizing: border-box;
-  font-family: "Pretendard";
+  width: 100vw;
+  font-family: 'HANAMDAUM';
+  background-color: rgb(255, 218, 188);
 }
 
-.todo_container {
-  padding: 30px;
-  width: 1000px;
-  margin: 0 auto;
+body {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
+}
+
+body h1 {
+  width: 60%;
+  font-size: 2.5rem;
+  font-family: 'HANAMDAUM';
   text-align: center;
-}
-
-#todo_lifeQuote {
-  font-size: 32px;
-}
-
-.todo_generator {
-  margin-top: 50px;
+  margin-top: 3rem;
+  background-color: rgb(0, 225, 177);
 }
 
 form {
   display: flex;
   justify-content: center;
+  align-items: center;
+  width: 70%;
+  margin-top: 5rem;
 }
 
 form input {
-  padding: 15px;
-  border-radius: 15px;
+  width: 50rem;
+  height: 3rem;
+  text-align: center;
 }
 
-#todo_listTitle {
-  margin-top: 50px;
-  font-size: 26px;
-}
-
-.todo_lists {
-  margin-top: 30px;
+ul {
+  width: 50rem;
+  margin-top: 2rem;
   display: flex;
   justify-content: center;
-  gap: 20px;
-  align-items: center;
-  flex-direction: column;
-}
-
-.todo_lists li {
-  border: 1px solid black;
-  width: 500px;
-  padding: 15px;
-  border-radius: 15px;
-  display: flex;
   align-items: center;
 }
 
-ul img {
-  width: 20px;
-  height: 20px;
-  margin-left: 20px;
+li {
+  width: 60%;
+  margin: 1rem;
+  background-color: rgb(0, 225, 177);
+}
+
+li span {
+  font-family: 'HANAMDAUM';
+  background-color: rgb(0, 225, 177);
+}
+
+.todo__delete {
+  width: 1.25rem;
+  height: 1.25rem;
+  margin-right: 0.5rem;
 }
